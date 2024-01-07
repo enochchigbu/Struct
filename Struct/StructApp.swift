@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct StructApp: App {
+    @State private var animationComplete = false
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EntryView()
         }
     }
 }
