@@ -1,17 +1,23 @@
-//
-//  HomeView.swift
-//  Struct
-//
-//  Created by Enoch Chigbu on 1/7/24.
-//
+// Home Screen, shown after account is created
 
 import SwiftUI
 
 struct HomeView: View {
     var body: some View {
-        NavigationView{
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text("STRUCT")
+                .font(.largeTitle)
+                .bold()
+            Spacer()
+            Text("Placeholder")
         }
+        Spacer()
+        NavigationView{
+            Text("Hello \(defaults.string(forKey: firstNameKey) ?? "User")!")
+            Spacer()
+        }.navigationBarBackButtonHidden(true)
+        Spacer()
+        TabBar(selectedTab: .constant(.schedules))
     }
 }
 

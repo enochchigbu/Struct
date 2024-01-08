@@ -2,6 +2,10 @@
 
 import SwiftUI
 
+let firstNameKey = "firstName"
+let lastNameKey = "lastName"
+let birthDateKey = "birthDate"
+
 struct UserCreationView: View {
     @State private var firstName : String = ""
     @State private var lastName : String = ""
@@ -25,20 +29,18 @@ struct UserCreationView: View {
                     .padding()
             }
             Spacer()
-            Button("Sign Up"){
-                signUpAction()
+            if !firstName.isEmpty && !lastName.isEmpty{
+                NavigationLink(destination: HomeView()){
+                    Text("Sign Up")
+                        .padding()
+                        .foregroundColor(Color.red)
+                }.simultaneousGesture(TapGesture().onEnded {
+                    defaults.set(true, forKey: userCreatedAccountKey)
+                    defaults.set(firstName, forKey: firstNameKey)
+                    defaults.set(lastName, forKey: lastNameKey)
+                })
             }
-            .padding()
-            .foregroundColor(Color.red)
-            
             Spacer()
-        }
-    }
-    
-    func signUpAction(){
-        if !firstName.isEmpty && !lastName.isEmpty {
-            // Set user
-            defaults.set(true, forKey: userCreatedAccountKey)
         }
     }
 }

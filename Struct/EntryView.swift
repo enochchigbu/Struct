@@ -4,9 +4,9 @@
 
 import SwiftUI
 
-let userCreatedAccountKey = "userCreatedAccount"
-
 let defaults = UserDefaults.standard
+
+let userCreatedAccountKey = "userCreatedAccount"
 
 struct EntryView: View {
     @State private var animationComplete = false
@@ -16,10 +16,11 @@ struct EntryView: View {
             VStack {
                 // Starting screen for the home screen on app boot
                 if !animationComplete {
-                    Text("Struct")
+                    Text("STRUCT")
                         .font(.largeTitle)
                         .padding()
                         .foregroundColor(.red)
+                        .bold()
                         .onAppear {
                             // Perform any initial setup or animations
                             withAnimation(.easeInOut(duration: 1.0)) {
