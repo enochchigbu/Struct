@@ -10,6 +10,10 @@
 		1F96E2012B4A9DCF00602474 /* UserCreationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2002B4A9DCF00602474 /* UserCreationView.swift */; };
 		1F96E2032B4AB5A600602474 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2022B4AB5A600602474 /* HomeView.swift */; };
 		1F96E2052B4BDCF800602474 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2042B4BDCF800602474 /* TabBar.swift */; };
+		1F96E2072B4BF51900602474 /* SchedulesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2062B4BF51900602474 /* SchedulesView.swift */; };
+		1F96E2092B4BF53C00602474 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2082B4BF53C00602474 /* AccountView.swift */; };
+		1F96E20B2B4BF58300602474 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E20A2B4BF58300602474 /* FriendsView.swift */; };
+		1F96E20D2B4BF5FB00602474 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E20C2B4BF5FB00602474 /* SettingsView.swift */; };
 		1FB8D2F82B4A828F00049C06 /* StructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8D2F72B4A828F00049C06 /* StructApp.swift */; };
 		1FB8D2FA2B4A828F00049C06 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8D2F92B4A828F00049C06 /* EntryView.swift */; };
 		1FB8D2FC2B4A829000049C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8D2FB2B4A829000049C06 /* Assets.xcassets */; };
@@ -40,6 +44,10 @@
 		1F96E2002B4A9DCF00602474 /* UserCreationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCreationView.swift; sourceTree = "<group>"; };
 		1F96E2022B4AB5A600602474 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1F96E2042B4BDCF800602474 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		1F96E2062B4BF51900602474 /* SchedulesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesView.swift; sourceTree = "<group>"; };
+		1F96E2082B4BF53C00602474 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		1F96E20A2B4BF58300602474 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		1F96E20C2B4BF5FB00602474 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1FB8D2F42B4A828F00049C06 /* Struct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Struct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB8D2F72B4A828F00049C06 /* StructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructApp.swift; sourceTree = "<group>"; };
 		1FB8D2F92B4A828F00049C06 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
@@ -107,6 +115,10 @@
 				1F96E2002B4A9DCF00602474 /* UserCreationView.swift */,
 				1F96E2022B4AB5A600602474 /* HomeView.swift */,
 				1F96E2042B4BDCF800602474 /* TabBar.swift */,
+				1F96E2062B4BF51900602474 /* SchedulesView.swift */,
+				1F96E2082B4BF53C00602474 /* AccountView.swift */,
+				1F96E20A2B4BF58300602474 /* FriendsView.swift */,
+				1F96E20C2B4BF5FB00602474 /* SettingsView.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -268,9 +280,13 @@
 			files = (
 				1F96E2052B4BDCF800602474 /* TabBar.swift in Sources */,
 				1FB8D2FA2B4A828F00049C06 /* EntryView.swift in Sources */,
+				1F96E20B2B4BF58300602474 /* FriendsView.swift in Sources */,
+				1F96E20D2B4BF5FB00602474 /* SettingsView.swift in Sources */,
 				1F96E2032B4AB5A600602474 /* HomeView.swift in Sources */,
 				1FB8D2F82B4A828F00049C06 /* StructApp.swift in Sources */,
+				1F96E2092B4BF53C00602474 /* AccountView.swift in Sources */,
 				1F96E2012B4A9DCF00602474 /* UserCreationView.swift in Sources */,
+				1F96E2072B4BF51900602474 /* SchedulesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

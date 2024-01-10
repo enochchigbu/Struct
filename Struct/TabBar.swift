@@ -13,9 +13,8 @@ import SwiftUI
 
 enum Tab: String, CaseIterable {
     case schedules
-    case friends
     case account
-    case settings
+    case friends
 }
 
 struct TabBar: View {
@@ -26,7 +25,13 @@ struct TabBar: View {
        HStack {
          ForEach(Tab.allCases, id: \.rawValue) { tab in
              Spacer()
-             Text("tab")
+             Text(tab.rawValue)
+                 .foregroundColor(Color.red)
+                 .onTapGesture {
+                      withAnimation(.easeIn(duration: 0.1)){
+                          selectedTab = tab
+                      }
+                 }
              Spacer()
            }
         }

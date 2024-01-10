@@ -3,21 +3,40 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var selectedTab: Tab = .schedules
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
         HStack{
             Text("STRUCT")
                 .font(.largeTitle)
                 .bold()
+                .foregroundColor(Color.red)
             Spacer()
-            Text("Placeholder")
+            NavigationLink(destination: SettingsView()){
+                Text("Settings")
+                    .foregroundColor(Color.red)
+            }
         }
         Spacer()
+        
         NavigationView{
-            Text("Hello \(defaults.string(forKey: firstNameKey) ?? "User")!")
-            Spacer()
+            if selectedTab == .schedules{
+                SchedulesView()
+            }
+            else if selectedTab == .account{
+                AccountView()
+            }
+            else{
+                FriendsView()
+            }
+            
         }.navigationBarBackButtonHidden(true)
+        
         Spacer()
-        TabBar(selectedTab: .constant(.schedules))
+        TabBar(selectedTab: $selectedTab)
     }
 }
 
