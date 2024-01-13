@@ -4,8 +4,6 @@
 
 import SwiftUI
 
-let defaults = UserDefaults.standard
-
 let userCreatedAccountKey = "userCreatedAccount"
 
 struct EntryView: View {

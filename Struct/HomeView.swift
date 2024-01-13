@@ -9,34 +9,34 @@ struct HomeView: View {
     }
     
     var body: some View {
-        HStack{
-            Text("STRUCT")
-                .font(.largeTitle)
-                .bold()
-                .foregroundColor(Color.red)
-            Spacer()
-            NavigationLink(destination: SettingsView()){
-                Text("Settings")
+        VStack{
+            HStack{
+                Text("STRUCT")
+                    .font(.largeTitle)
+                    .bold()
                     .foregroundColor(Color.red)
+                Spacer()
+                NavigationLink(destination: SettingsView()){
+                    Text("Settings")
+                        .foregroundColor(Color.red)
+                }
             }
+            Spacer()
+            Group{
+                if selectedTab == .schedules{
+                    SchedulesView()
+                }
+                else if selectedTab == .account{
+                    AccountView()
+                }
+                else{
+                    FriendsView()
+                }
+                
+            }.navigationBarBackButtonHidden(true)
+            Spacer()
+            TabBar(selectedTab: $selectedTab)
         }
-        Spacer()
-        
-        NavigationView{
-            if selectedTab == .schedules{
-                SchedulesView()
-            }
-            else if selectedTab == .account{
-                AccountView()
-            }
-            else{
-                FriendsView()
-            }
-            
-        }.navigationBarBackButtonHidden(true)
-        
-        Spacer()
-        TabBar(selectedTab: $selectedTab)
     }
 }
 
