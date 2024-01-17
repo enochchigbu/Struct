@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
-
 let defaults = UserDefaults.standard
 
 @main
 struct StructApp: App {
+    @StateObject private var dataController = DataController()
+    
     var body: some Scene {
         WindowGroup {
             EntryView()
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }

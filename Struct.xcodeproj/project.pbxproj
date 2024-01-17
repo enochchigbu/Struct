@@ -15,6 +15,8 @@
 		1F96E20B2B4BF58300602474 /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E20A2B4BF58300602474 /* FriendsView.swift */; };
 		1F96E20D2B4BF5FB00602474 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E20C2B4BF5FB00602474 /* SettingsView.swift */; };
 		1F96E20F2B4E8D6F00602474 /* SchedulesCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E20E2B4E8D6F00602474 /* SchedulesCalendarView.swift */; };
+		1F96E2122B52828F00602474 /* Struct.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2102B52828E00602474 /* Struct.xcdatamodeld */; };
+		1F96E2142B52841F00602474 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F96E2132B52841F00602474 /* DataController.swift */; };
 		1FB8D2F82B4A828F00049C06 /* StructApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8D2F72B4A828F00049C06 /* StructApp.swift */; };
 		1FB8D2FA2B4A828F00049C06 /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8D2F92B4A828F00049C06 /* EntryView.swift */; };
 		1FB8D2FC2B4A829000049C06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8D2FB2B4A829000049C06 /* Assets.xcassets */; };
@@ -50,6 +52,8 @@
 		1F96E20A2B4BF58300602474 /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
 		1F96E20C2B4BF5FB00602474 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		1F96E20E2B4E8D6F00602474 /* SchedulesCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesCalendarView.swift; sourceTree = "<group>"; };
+		1F96E2112B52828F00602474 /* Struct.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Struct.xcdatamodel; sourceTree = "<group>"; };
+		1F96E2132B52841F00602474 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		1FB8D2F42B4A828F00049C06 /* Struct.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Struct.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB8D2F72B4A828F00049C06 /* StructApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StructApp.swift; sourceTree = "<group>"; };
 		1FB8D2F92B4A828F00049C06 /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
@@ -122,6 +126,8 @@
 				1F96E20A2B4BF58300602474 /* FriendsView.swift */,
 				1F96E20C2B4BF5FB00602474 /* SettingsView.swift */,
 				1F96E20E2B4E8D6F00602474 /* SchedulesCalendarView.swift */,
+				1F96E2102B52828E00602474 /* Struct.xcdatamodeld */,
+				1F96E2132B52841F00602474 /* DataController.swift */,
 			);
 			path = Struct;
 			sourceTree = "<group>";
@@ -282,6 +288,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F96E2052B4BDCF800602474 /* TabBar.swift in Sources */,
+				1F96E2142B52841F00602474 /* DataController.swift in Sources */,
 				1FB8D2FA2B4A828F00049C06 /* EntryView.swift in Sources */,
 				1F96E20B2B4BF58300602474 /* FriendsView.swift in Sources */,
 				1F96E20D2B4BF5FB00602474 /* SettingsView.swift in Sources */,
@@ -291,6 +298,7 @@
 				1F96E2092B4BF53C00602474 /* AccountView.swift in Sources */,
 				1F96E2012B4A9DCF00602474 /* UserCreationView.swift in Sources */,
 				1F96E2072B4BF51900602474 /* SchedulesView.swift in Sources */,
+				1F96E2122B52828F00602474 /* Struct.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +619,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1F96E2102B52828E00602474 /* Struct.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1F96E2112B52828F00602474 /* Struct.xcdatamodel */,
+			);
+			currentVersion = 1F96E2112B52828F00602474 /* Struct.xcdatamodel */;
+			path = Struct.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1FB8D2EC2B4A828F00049C06 /* Project object */;
 }
